@@ -11,7 +11,6 @@
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
 
-
     <!-- Webpage Title -->
     <title> TechStudio9 </title>
 
@@ -28,6 +27,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Roboto Slab', serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@200&display=swap"
+        rel="stylesheet">
     <!-- About Name Logo Fonts  -->
     <link href="https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap" rel="stylesheet">
 
@@ -42,9 +45,9 @@
         <div class="container">
 
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html">
-                <!-- <img class="logoSvg" width="auto" height="40vh" src="./images/favicon.svg" alt="tech9"> -->
-                <span> TechStudio9 </span>
+            <a class="navbar-brand logo-image-before-scroll logo-image-after-scroll " href="index.html">
+                <!-- <img class="logoSvg" width="auto" height="40vh" src="./images/techlogo.jpeg" alt="tech9"> -->
+                <!-- <span> TechStudio9 </span> -->
             </a>
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
@@ -187,7 +190,7 @@
                                 They've such a awesomes developers with great attention to details. They've also has
                                 a great eyes for design” <span class="fw-bolder">thanks</span></p>
                             <div class="details">
-                                <img src="images/testimonial-2.jpg" alt="alternative">
+                                <img src="./images/user.svg" alt="alternative">
                                 <div class="text">
                                     <div class="testimonial-author">Eddie Munson</div>
                                     <div class="occupation">Marketing Manager - <span
@@ -206,7 +209,7 @@
                                 . We've used many times those design and development skills for our inhouse online
                                 projects”</p>
                             <div class="details">
-                                <img src="images/testimonial-3.jpg" alt="alternative">
+                                <img src="./images/user.svg" alt="alternative">
                                 <div class="text">
                                     <div class="testimonial-author">Jane Hopper</div>
                                     <div class="occupation">General Manager - Shifter</div>
@@ -223,7 +226,7 @@
                                 & inovative ideas based developers company which will do everything possible
                                 to deliver the project on time and I really appreciate that”</p>
                             <div class="details">
-                                <img src="images/testimonial-1.jpg" alt="alternative">
+                                <img src="./images/user.svg" alt="alternative">
                                 <div class="text">
                                     <div class="testimonial-author">Winona Ryder</div>
                                     <div class="occupation">Team Leader - Syncnow</div>
@@ -259,7 +262,6 @@
             </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
-
                     <div class="accordion" id="accordionExample">
                         <div class="card">
                             <div class="card-header" id="headingOne">
@@ -271,8 +273,8 @@
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    The best way to reach us is through the contact form of by messaging us on our
-                                    social media accounts. For a fast quote make sure your provide many project details
+                                    The best way to reach us is through the contact form of and by email as mention
+                                    below. For a fast quote make sure your provide many project details .
                                 </div>
                             </div>
                         </div>
@@ -287,8 +289,9 @@
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    The best way to reach me is through the contact form of by messaging me on my social
-                                    media accounts. For a fast quote make sure your provide many project details
+                                    yes before we start our work for your project. we make a design and first show you.
+                                    this work is done by designers. who work for many companies and gave their
+                                    contribution as designers
                                 </div>
                             </div>
                         </div>
@@ -303,8 +306,7 @@
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    The best way to reach me is through the contact form of by messaging me on my social
-                                    media accounts. For a fast quote make sure your provide many project details
+                                    We assure you that your project is not modified in any way without asking you.
                                 </div>
                             </div>
                         </div>
@@ -319,8 +321,8 @@
                             <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    The best way to reach me is through the contact form of by messaging me on my social
-                                    media accounts. For a fast quote make sure your provide many project details
+                                    When you fill your project information in the form, then we'll discuss about it on
+                                    the discussion call.
                                 </div>
                             </div>
                         </div>
@@ -341,7 +343,6 @@
                             </div>
                         </div>
                     </div> <!-- end of accordion -->
-
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -363,9 +364,9 @@
                     </p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
 
+            <div class="row">
+                <div class="col-lg-6">
                     <!-- Contact Form -->
                     <form method="POST" name="google-sheet" id="formDisplay">
                         <div class="form-group">
@@ -378,11 +379,7 @@
                         </div>
                         <div class="form-group">
                             <input type="text" name="Number" class="form-control-input" id="cnumber" required>
-                            <label class="label-control" for="cnumber">Number</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="Subject" class="form-control-input" id="csubject" required>
-                            <label class="label-control" for="csubject">Subject</label>
+                            <label class="label-control" for="cnumber">Mobile</label>
                         </div>
                         <div class="form-group">
                             <textarea class="form-control-textarea" name="Project-details" id="cmessage"
@@ -406,8 +403,41 @@
                     <!-- ThankYou form End -->
 
                 </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
+                <div class="col-lg-6 col-md-12 contactBoxParent">
+                    <!--contact details box start-->
+                    <div class="contactBox">
+                        <div class="d-flex align-items-center">
+                            <div class="icon px-5"> <img src="./images/map-pin.svg" alt="location"></div>
+                            <div class="locationText">
+                                <p> Apollo Square </p>
+                                <p> Janjeerwala Choraha </p>
+                                <p> indore </p>
+                            </div>
+                        </div>
+                        <div class="contactBorder"></div>
+                        <div class="d-flex align-items-center my-4">
+                            <div class="icon px-5"> <img src="./images/mail.svg" alt="location"></div>
+                            <div class="locationText">
+                                <p>connect@techstudio9.com </p>
+                            </div>
+                        </div>
+                        <div class="contactBorder"></div>
+                        <div class="d-flex align-items-center my-4">
+
+                            <div class="icon px-5"> <img src="./images/phone.svg" alt="location"></div>
+                            <div class="locationText">
+                                <p> (+91) 6260116100 </p>
+                                <p> (+91) 9039515439 </p>
+                            </div>
+                        </div>
+                        <div class="contactBorder"></div>
+                    </div>
+                </div>
+                <!--contact details box end-->
+            </div>
+        </div>
+    </div> <!-- end of row -->
+    </div> <!-- end of container -->
     </div> <!-- end of form-1 -->
     <!-- end of contact -->
 
@@ -441,14 +471,8 @@
                                 <i class="fab fa-instagram fa-stack-1x"></i>
                             </a>
                         </span>
-                        <!-- <span class="fa-stack">
-                            <a href="index.html">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-youtube fa-stack-1x"></i>
-                            </a>
-                        </span> -->
-                    </div> <!-- end of social-container -->
-                </div> <!-- end of col -->
+                    </div>
+                </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of footer -->
@@ -466,10 +490,8 @@
         </div> <!-- end of container -->
     </div> <!-- end of copyright -->
     <!-- end of copyright -->
-
     <!-- Scripts -->
     <script>
-
         /* This is App Sheet URL */
         const scriptUrl = 'https://script.google.com/macros/s/AKfycbxrCMHeLBAxtXitb8vjOZlcjMebirUVdIiPHnLSNCKfzkbpFqQcumMKMkzvsi1fsnU/exec'
 
@@ -486,7 +508,6 @@
                 })
                 .catch(error => console.error("Error!", error))
         })
-
     </script>
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->

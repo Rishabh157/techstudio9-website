@@ -123,7 +123,8 @@ a {
 }
 
 a:hover {
-	color: #4d5055;
+	/* color: #4d5055; */
+	color: black;
 	text-decoration: underline;
 }
 
@@ -136,7 +137,12 @@ a:hover {
 }
 
 .blue {
-	color: #2259ec;
+	color: #2BC9DD;
+}
+
+.blue:hover {
+	color: #2BC9DD;
+	text-decoration: underline;
 }
 
 .bg-gray {
@@ -162,32 +168,6 @@ a:hover {
 	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s;
-}
-
-.btn-solid-reg:hover {
-	background-color: transparent;
-	color: #0b36a8;
-	/* needs to stay here because of the color property of a tag */
-	text-decoration: none;
-}
-
-.btn-outline-reg {
-	display: inline-block;
-	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
-	border: 1px solid #24262a;
-	background-color: transparent;
-	color: #24262a;
-	font-weight: 600;
-	font-size: 0.875rem;
-	line-height: 0;
-	text-decoration: none;
-	transition: all 0.2s;
-}
-
-.btn-outline-reg:hover {
-	background-color: #24262a;
-	color: #ffffff;
-	text-decoration: none;
 }
 
 .btn-outline-lg {
@@ -218,12 +198,6 @@ a:hover {
 	transition: all 0.2s;
 }
 
-.btn-outline-sm:hover {
-	background-color: #24262a;
-	color: #ffffff;
-	text-decoration: none;
-}
-
 .form-group {
 	position: relative;
 	margin-bottom: 1.25rem;
@@ -233,7 +207,6 @@ a:hover {
 	position: absolute;
 	top: 0.875rem;
 	left: 1.5rem;
-	/* color: #7d838a; */
 	color: #ffffff;
 	opacity: 1;
 	font-size: 0.875rem;
@@ -257,52 +230,28 @@ a:hover {
 .form-control-input,
 .form-control-select {
 	display: block;
-	/* needed for proper display of the label in Firefox, IE, Edge */
 	width: 100%;
 	padding-top: 1.125rem;
 	padding-bottom: 0.125rem;
 	padding-left: 1.5rem;
-	border: 1px solid #cbcbd1;
-	/* background-color: #ffffff; */
+	border: 1px solid #2BC9DD;
 	background-color: black;
-	/* color: #4d5055; */
+	color: #4d5055;
 	color: #ffffff;
 	font-size: 0.875rem;
 	line-height: 1.875rem;
 	transition: all 0.2s;
 	-webkit-appearance: none;
 	border-radius: 4px;
-	/* removes inner shadow on form inputs on ios safari */
-}
-
-.form-control-select {
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	height: 3.25rem;
-	color: #7d838a;
-}
-
-select {
-	/* you should keep these first rules in place to maintain cross-browser behavior */
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
-	-o-appearance: none;
-	appearance: none;
-	background-position: 96% 50%;
-	background-repeat: no-repeat;
-	outline: none;
 }
 
 .form-control-textarea {
 	display: block;
-	/* used to eliminate a bottom gap difference between Chrome and IE/FF */
 	width: 100%;
-	height: 14rem;
-	/* used instead of html rows to normalize height between Chrome and IE/FF */
+	height: 8rem;
 	padding-top: 1.5rem;
 	padding-left: 1.3125rem;
-	border: 1px solid #cbcbd1;
+	border: 1px solid #2BC9DD;
 	background-color: black;
 	border-radius: 4px;
 	color: #ffffff;
@@ -314,8 +263,7 @@ select {
 .form-control-input:focus,
 .form-control-select:focus,
 .form-control-textarea:focus {
-	/* border: 1px solid #a1a1a1; */
-	border: 1px solid #776c6c;
+	border: 1px solid #1C1F52;
 	outline: none;
 	/* Removes blue border on focus */
 }
@@ -323,28 +271,16 @@ select {
 .form-control-input:hover,
 .form-control-select:hover,
 .form-control-textarea:hover {
-	/* border: 1px solid #a1a1a1; */
-	border: 1px solid black;
-}
-
-.checkbox {
-	font-size: 0.75rem;
-	line-height: 1.25rem;
-}
-
-input[type='checkbox'] {
-	vertical-align: -10%;
-	margin-right: 0.5rem;
+	border: 1px solid rgb(64, 64, 128);
 }
 
 .form-control-submit-button {
 	display: inline-block;
 	width: 100%;
 	height: 3.25rem;
-	/* border: 1px solid #0b36a8; */
-	border: 1px solid gray;
+	border: 1px solid #2BC9DD;
 	border-radius: 32px;
-	background-color: black;
+	background-color: #2BC9DD;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -355,8 +291,7 @@ input[type='checkbox'] {
 
 .form-control-submit-button:hover {
 	border: 1px solid #24262a;
-	/* background-color: transparent; */
-	background-color: rgb(116, 155, 160);
+	background-color: green;
 	color: #ffffff;
 }
 
@@ -386,17 +321,28 @@ input[type='checkbox'] {
 	text-decoration: none;
 }
 
-.navbar .logo-image img {
-	width: 118px;
-	height: 36px;
-}
+/* .navbar .logo-image img {
+	height: 57px;
+} */
 
-.navbar .logo-text {
-	color: #ffffff;
-	font-weight: 700;
-	font-size: 1.875rem;
-	line-height: 1rem;
-	text-decoration: none;
+/* .logo-image-before-scroll {
+	background-size: contain;
+	background-repeat: no-repeat no-repeat;
+	background-image: url("../images/techlogo.jpeg");
+	height: 72px;
+	width: 18.3%;
+	background-color: #000000;
+	background-blend-mode: multiply;
+} */
+
+.logo-image-after-scroll {
+	background-size: contain;
+	background-repeat: no-repeat no-repeat;
+	background-image: url("../images/techlogo.jpeg");
+	height: 72px;
+	width: 18.3%;
+	background-color: #ffffff;
+	background-blend-mode: multiply;
 }
 
 .offcanvas-collapse {
@@ -430,15 +376,14 @@ input[type='checkbox'] {
 .navbar .nav-item .nav-link {
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
-	color: #ffffff;
+	color: #000;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
 
 
 .navbar .fa-stack:hover .fa-stack-1x {
-	/* color: #0b36a8; */
-	color: black;
+	color: #0b36a8;
 }
 
 .navbar .navbar-toggler {
@@ -724,12 +669,45 @@ input[type='checkbox'] {
 	color: #ffffff;
 }
 
-
-
-
 /*********************/
 /*  Thank-You Alert  */
 /*********************/
+
+.contactBox {
+	height: 400px;
+	width: auto;
+	padding: 0px 0px 0px 24px;
+}
+
+
+@media only screen and (max-width:996px) {
+	.contactBoxParent {
+		margin-top: 100px;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.contactBox img {
+	height: 23px;
+}
+
+.contactBox p {
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-weight: 200;
+	font-family: 'Roboto Slab', serif;
+	color: white;
+}
+
+.contactBorder {
+	border-style: solid;
+	border-width: thin;
+	min-width: 52%;
+	margin-left: 53px;
+	margin-top: 36px;
+	margin-bottom: 36px;
+}
 
 .template {
 	min-height: 240px;
@@ -807,8 +785,7 @@ a.back-to-top {
 }
 
 a:hover.back-to-top {
-	/* background-color: #0b36a8; */
-	background-color: white;
+	background-color: #2BC9DD;
 }
 
 
@@ -935,7 +912,8 @@ a:hover.back-to-top {
 	.navbar.top-nav-collapse {
 		padding-top: 0.5rem;
 		padding-top: 0.5rem;
-		background-color: #24262a;
+		/* background-color: #24262a; */
+		background-color: #f7f7f7;
 		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
 	}
 
@@ -1042,7 +1020,7 @@ a:hover.back-to-top {
 
 	/* Contact */
 	.form-1 form {
-		width: 790px;
+		min-width: 100%;
 		margin-right: auto;
 		margin-left: auto;
 	}

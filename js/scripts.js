@@ -11,7 +11,11 @@
     $(window).on('scroll load', function () {
         if ($(".navbar").offset().top > 60) {
             $(".fixed-top").addClass("top-nav-collapse");
+            // $(".navbar-brand").addClass("logo-image-after-scroll");
+            // $(".navbar-brand").removeClass("logo-image-before-scroll");
         } else {
+            // $(".navbar-brand").addClass("logo-image-before-scroll");
+            // $(".navbar-brand").removeClass("logo-image-after-scroll");
             $(".fixed-top").removeClass("top-nav-collapse");
         }
     });
