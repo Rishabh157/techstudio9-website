@@ -334,7 +334,7 @@ a:hover {
 	background-color: #000000;
 	background-blend-mode: multiply;
 } */
-
+/* 
 .logo-image-after-scroll {
 	background-size: contain;
 	background-repeat: no-repeat no-repeat;
@@ -343,7 +343,7 @@ a:hover {
 	width: 18.3%;
 	background-color: #ffffff;
 	background-blend-mode: multiply;
-}
+} */
 
 .offcanvas-collapse {
 	position: fixed;
@@ -376,7 +376,8 @@ a:hover {
 .navbar .nav-item .nav-link {
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
-	color: #000;
+	/* color: #000; */
+	color: white;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
@@ -912,8 +913,9 @@ a:hover.back-to-top {
 	.navbar.top-nav-collapse {
 		padding-top: 0.5rem;
 		padding-top: 0.5rem;
-		/* background-color: #24262a; */
-		background-color: #f7f7f7;
+		background-color: #24262a;
+		color: white;
+		/* background-color: #f7f7f7; */
 		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
 	}
 
